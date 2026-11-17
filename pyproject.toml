@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "castle-token"
+version = "0.1.0"
+description = "Castle antibot token gen"
+requires-python = ">=3.9"
+
+[project.scripts]
+castle = "castle.__main__:main"
+
+[tool.setuptools]
+packages = ["castle", "castle.runtime"]
+
+[tool.setuptools.package-data]
+"castle" = ["castle.js"]
+"castle.runtime" = ["js/*.js", "js/*.json", "profiles/*.json", "profiles/_README.txt"]
