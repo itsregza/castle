@@ -6,6 +6,7 @@ Generates Castle.io request tokens. It runs Castle's own SDK in Node using a fin
 
 Needs Python 3.9+ and Node.js.
 
+```python
 from castle import generate_token
 
 t = generate_token("pk_...", "https://example.com/login")
